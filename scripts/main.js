@@ -1,5 +1,6 @@
 // Set up DB
 function loadData(dbFile) {
+  console.log('loading DB');
   if (!dbFile) { return; }
   window.worker = new Worker("/scripts/worker.sql.js");
   var xhr = new XMLHttpRequest();
