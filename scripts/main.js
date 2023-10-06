@@ -2,7 +2,7 @@
 function loadData(dbFile) {
   if (!dbFile) { return; }
   console.log('loading DB');
-  window.worker = new Worker("/selectstarsql/scripts/worker.sql.js");
+  window.worker = new Worker("/scripts/worker.sql.js");
   console.log('created new worker');
   var xhr = new XMLHttpRequest();
   xhr.open('GET', dbFile, true);
